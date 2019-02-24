@@ -19,8 +19,8 @@ import java.util.Comparator;
 
 public class Processor {
 
-    private final File sourceFolder;//= new File("C:\\Software\\Fraps\\Screenshots");
-    private final File targetFolder;//= new File("C:\\Project_git\\DS3PanoramaViewer\\texture");
+    private final File sourceFolder;
+    private final File targetFolder;
 
     public Processor(File sourceFolder, File targetFolder) {
         this.sourceFolder = sourceFolder;
@@ -56,7 +56,6 @@ public class Processor {
                             subimage = rotate(subimage, -Math.PI);
                         }
                         writeImage(subimage, new File(folder + "/" + Point.TEXTURE_NAMES[i]));
-                        writeImage(subimage, new File(targetFolder.getAbsolutePath() + "/" + Point.TEXTURE_NAMES[i]));
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

@@ -34,7 +34,7 @@ public class App {
         data = new Data();
         processor = new Processor(
                 new File("C:\\Software\\Fraps\\Screenshots"),
-                new File("C:\\Project_git\\DS3PanoramaViewer\\texture"));
+                new File("C:\\Project_git\\DS3PanoramaViewer\\data"));
         state = new State();
     }
 
